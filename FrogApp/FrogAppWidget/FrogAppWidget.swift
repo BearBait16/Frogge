@@ -5,52 +5,62 @@
 //  Created by William Barr on 10/18/24.
 //
 
-import WidgetKit
 import SwiftUI
+import WidgetKit
 
-struct Provider: AppIntentTimelineProvider {
+// Mock function to simulate fetching image and number from "GetFrogge" script
+func fetchFroggeData() -> (image: UIImage, number: Int) {
+    // Replace this with the actual logic to fetch data from "GetFrogge"
+    return (UIImage(named: "frogImage")!, Int.random(in: 1...100))
+}
+
+struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationAppIntent())
+        SimpleEntry(date: Date(), image: UIImage(named: "frogImage")!, number: 0)
     }
 
-    func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: configuration)
+    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> Void) {
+        let froggeData = fetchFroggeData()
+        let entry = SimpleEntry(date: Date(), image: froggeData.image, number: froggeData.number)
+        completion(entry)
     }
-    
-    func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
+
+    func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> Void) {
         var entries: [SimpleEntry] = []
 
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
-            entries.append(entry)
-        }
+        let froggeData = fetchFroggeData()
 
-        return Timeline(entries: entries, policy: .atEnd)
+        // Create a daily entry
+        let entryDate = Calendar.current.startOfDay(for: currentDate)
+        let entry = SimpleEntry(date: entryDate, image: froggeData.image, number: froggeData.number)
+        entries.append(entry)
+
+        // Schedule to update again the next day
+        let nextUpdateDate = Calendar.current.date(byAdding: .day, value: 1, to: entryDate)!
+        let timeline = Timeline(entries: entries, policy: .after(nextUpdateDate))
+
+        completion(timeline)
     }
-
-//    func relevances() async -> WidgetRelevances<ConfigurationAppIntent> {
-//        // Generate a list containing the contexts this widget is relevant in.
-//    }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let configuration: ConfigurationAppIntent
+    let image: UIImage
+    let number: Int
 }
 
-struct FrogAppWidgetEntryView : View {
+struct FrogAppWidgetEntryView: View {
     var entry: Provider.Entry
 
     var body: some View {
         VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
+            Image(uiImage: entry.image)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 100)
+            Text("Number: \(entry.number)")
+                .font(.headline)
         }
     }
 }
@@ -59,30 +69,17 @@ struct FrogAppWidget: Widget {
     let kind: String = "FrogAppWidget"
 
     var body: some WidgetConfiguration {
-        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
             FrogAppWidgetEntryView(entry: entry)
-                .containerBackground(.fill.tertiary, for: .widget)
         }
+        .configurationDisplayName("Frog App Widget")
+        .description("This widget shows an image and a number fetched from the GetFrogge script.")
     }
 }
 
-extension ConfigurationAppIntent {
-    fileprivate static var smiley: ConfigurationAppIntent {
-        let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "😀"
-        return intent
+@main
+struct FrogAppWidgetBundle: WidgetBundle {
+    var body: some Widget {
+        FrogAppWidget()
     }
-    
-    fileprivate static var starEyes: ConfigurationAppIntent {
-        let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "🤩"
-        return intent
-    }
-}
-
-#Preview(as: .systemSmall) {
-    FrogAppWidget()
-} timeline: {
-    SimpleEntry(date: .now, configuration: .smiley)
-    SimpleEntry(date: .now, configuration: .starEyes)
 }
