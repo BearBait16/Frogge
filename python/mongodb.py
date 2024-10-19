@@ -28,7 +28,7 @@ def download_gif(file_id, download_path):
         print(f'Downloaded file to {download_path}')
 
 # Example usage
-file_path = 'jump_frog.gif'  # Ensure the path is correct
-relative_path = 'DartFrogImage'  # Change this to your desired relative path
+file_path = 'jump_frog_still_2-export.png'  # Ensure the path is correct
+relative_path = 'DartStillImage'  # Change this to your desired relative path
 file_id = upload_gif(file_path, relative_path)  # Ensure the path is correct
 download_gif(file_id, 'downloaded_file.gif')  # Ensure the path is correct
