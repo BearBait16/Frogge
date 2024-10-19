@@ -13,13 +13,6 @@ connection_string = f'mongodb+srv://{username}:{password}@{cluster_address}/{db_
 client = MongoClient(connection_string)
 db = client[db_name]
 
-def upload_gif(file_path):
-    fs = gridfs.GridFS(db)
-    with open(file_path, 'rb') as file:
-        file_id = fs.put(file, filename=os.path.basename(file_path))
-        print(f'Uploaded {file_path} with id {file_id}')
-        return file_id
-
 def download_gif(file_id, download_path):
     fs = gridfs.GridFS(db)
     file_data = fs.get(file_id)
@@ -29,16 +22,6 @@ def download_gif(file_id, download_path):
 
 # Example usage
 if __name__ == "__main__":
-    # Uploading a GIF
-    file_id = upload_gif('Tadpol_big-export.gif')  # Ensure the path is correct
-
-    # Downloading the same GIF
+    # Replace this with the actual file_id you want to download
+    file_id = 'your_file_id_here'  # Replace with the actual file ID or retrieve it from the database
     download_gif(file_id, 'downloaded_file.gif')  # Ensure the path is correct
-
-"""
-commands to download propper libraries
-
-pip install pymongo gridfs
-
-
-"""
