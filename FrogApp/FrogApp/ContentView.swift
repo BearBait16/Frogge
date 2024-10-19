@@ -19,55 +19,94 @@ struct ContentView: View {
     @StateObject private var healthStore = HealthStore()
     
     var body: some View {
-        HStack {
+        ZStack {
+                    // Background Image
+                    Image("background_image_2") // Replace with your image's name
+                        .resizable()
+                        .scaledToFill() // Ensures the image fills the entire screen
+                        .edgesIgnoringSafeArea(.all) // Makes sure it covers the whole view
             VStack {
-                Image(getImageNameForFrog(for: healthStore.strengthWorkoutCount,frogType: treeFrog))
+                Spacer()
+                Image("lily_pad")
                     .resizable()
-                    .scaledToFit()
-                    .frame(width: 75.0, height: 75.0)
-                    .padding()
-                Text("Strength Workout Count: \(healthStore.strengthWorkoutCount)")
-                    .font(.largeTitle)
-                    .padding()
-            }.task {
-                await healthStore.requestAuthorization()
+                    .frame(height: 400.0)
+                    .offset(y: 150)
             }
-//            .padding()
+                
+                
+                
             VStack {
-                Image(getImageNameForFrog(for: healthStore.cardioWorkoutCount,frogType:frogFrog))
-                    .resizable()
-                    .frame(width: 75, height: 75)
-                    .padding()
-                Text("Cardio Workout Count: \(healthStore.cardioWorkoutCount)")
-                    .font(.largeTitle)
-                    .padding()
-                Button("increment") {
-                    healthStore.cardioWorkoutCount += 1
+                Spacer()
+                HStack {
+                    VStack {
+                        Image(getImageNameForFrog(for: healthStore.strengthWorkoutCount,frogType: treeFrog))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 75.0, height: 75.0)
+                            .padding()
+                        Text("Strength")
+                            .font(.footnote)
+                            .foregroundColor(Color.white)
+                        Text("\(healthStore.strengthWorkoutCount)")
+                            .foregroundColor(Color.white)
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .padding()
+                    }.task {
+                        await healthStore.requestAuthorization()
+                    }
+                    //            .padding()
+                    VStack {
+                        Image(getImageNameForFrog(for: healthStore.cardioWorkoutCount,frogType:frogFrog))
+                            .resizable()
+                            .frame(width: 75, height: 75)
+                            .padding()
+                        Text("Cardio")
+                            .foregroundColor(Color.white)
+                            .font(.footnote)
+                        Text("\(healthStore.cardioWorkoutCount)")
+                            .foregroundColor(Color.white)
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .padding()
+                        //                Button("increment") {
+                        //                    healthStore.cardioWorkoutCount += 1
+                        //                }
+                    }.task {
+                        await healthStore.requestAuthorization()
+                    }
+                    //            .padding()
+                    VStack {
+                        Image(getImageNameForFrog(for: healthStore.mobilityWorkoutCount,frogType: dartFrog))
+                            .resizable()
+                            .frame(width: 75, height: 75)
+                            .padding()
+                        Text("Mobility")
+                            .foregroundColor(Color.white)
+                            .font(.footnote)
+                        
+                        Text("\(healthStore.mobilityWorkoutCount)")
+                            .foregroundColor(Color.white)
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .padding()
+                    }.task {
+                        await healthStore.requestAuthorization()
+                    }
+                    //            .padding()
                 }
-            }.task {
-                await healthStore.requestAuthorization()
+                
             }
-//            .padding()
-            VStack {
-                Image(getImageNameForFrog(for: healthStore.mobilityWorkoutCount,frogType: dartFrog))
-                    .frame(width: 75, height: 75)
-                    .padding()
-                Text("Mobility Workout Count: \(healthStore.mobilityWorkoutCount)")
-                    .font(.largeTitle)
-                    .padding()
-            }.task {
-                await healthStore.requestAuthorization()
-            }
-//            .padding()
+            
         }
     }
     
     //function to update the image when the counters fo up
     func getImageNameForFrog(for count: Int, frogType: Frog) -> String {
         switch count {
-        case 0...10:
+        case 0...9:
             return frogType.eggImage //calls egg image
-        case 11...20:
+        case 10...19:
             return frogType.tadpoleImage //calls tadpole image
         default:
             return frogType.frogImage //calls frog image

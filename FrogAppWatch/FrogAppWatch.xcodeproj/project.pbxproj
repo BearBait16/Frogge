@@ -72,21 +72,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		537C21792CC34A4A007A5011 /* FrogAppWatch */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FrogAppWatch;
-			sourceTree = "<group>";
-		};
-		537C218A2CC34A4E007A5011 /* FrogAppWatchTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FrogAppWatchTests;
-			sourceTree = "<group>";
-		};
-		537C21942CC34A4E007A5011 /* FrogAppWatchUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FrogAppWatchUITests;
-			sourceTree = "<group>";
-		};
 		537C21A12CC34A4E007A5011 /* FrogAppWatch Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "FrogAppWatch Watch App";
@@ -153,9 +138,6 @@
 		537C216E2CC34A4A007A5011 = {
 			isa = PBXGroup;
 			children = (
-				537C21792CC34A4A007A5011 /* FrogAppWatch */,
-				537C218A2CC34A4E007A5011 /* FrogAppWatchTests */,
-				537C21942CC34A4E007A5011 /* FrogAppWatchUITests */,
 				537C21A12CC34A4E007A5011 /* FrogAppWatch Watch App */,
 				537C21B22CC34A4F007A5011 /* FrogAppWatch Watch AppTests */,
 				537C21BC2CC34A4F007A5011 /* FrogAppWatch Watch AppUITests */,
@@ -193,9 +175,6 @@
 			dependencies = (
 				537C21A02CC34A4E007A5011 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				537C21792CC34A4A007A5011 /* FrogAppWatch */,
-			);
 			name = FrogAppWatch;
 			packageProductDependencies = (
 			);
@@ -216,9 +195,6 @@
 			dependencies = (
 				537C21892CC34A4E007A5011 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				537C218A2CC34A4E007A5011 /* FrogAppWatchTests */,
-			);
 			name = FrogAppWatchTests;
 			packageProductDependencies = (
 			);
@@ -238,9 +214,6 @@
 			);
 			dependencies = (
 				537C21932CC34A4E007A5011 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				537C21942CC34A4E007A5011 /* FrogAppWatchUITests */,
 			);
 			name = FrogAppWatchUITests;
 			packageProductDependencies = (
