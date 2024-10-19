@@ -10,7 +10,9 @@ enum HealthError: Error {
 class HealthStore: ObservableObject {
     var healthStore: HKHealthStore?
     var lastError: Error?
-    var workoutCount: Int = 0
+    var strengthWorkoutCount: Int = 0
+    var cardioWorkoutCount: Int = 0
+    var mobilityWorkoutCount: Int = 0
     
     init() {
         if HKHealthStore.isHealthDataAvailable() {
@@ -50,7 +52,7 @@ class HealthStore: ObservableObject {
                 return
             }
             print("New workout detected")  // Log when a workout is detected
-            Task { await self?.updateWorkoutCount() }  // Update count
+            Task { await self?.fetchWorkoutsByType() }  // Update count
         }
 
         // Execute the observer query
@@ -64,6 +66,58 @@ class HealthStore: ObservableObject {
                 print("Failed to enable background delivery: \(String(describing: error))")
             }
         }
+    }
+    
+    private func fetchWorkoutsByType() async {
+        guard let healthStore = self.healthStore else { return }
+
+        let workoutType = HKObjectType.workoutType()
+        let query = HKSampleQuery(sampleType: workoutType, predicate: nil, limit: 0, sortDescriptors: nil) { [weak self] _, samples, error in
+            if let error = error {
+                print("Error fetching workouts: \(error)")
+                self?.lastError = error
+                return
+            }
+
+            guard let workouts = samples as? [HKWorkout] else { return }
+
+            // Initialize counts for each category
+            var strengthCount = 0
+            var cardioCount = 0
+            var mobilityCount = 0
+
+            // Categorize the workouts based on their activity type
+            for workout in workouts {
+                switch workout.workoutActivityType {
+                case .traditionalStrengthTraining,
+                     .functionalStrengthTraining,
+                     .highIntensityIntervalTraining:
+                    strengthCount += 1
+
+                case .running, .cycling, .swimming,
+                     .walking, .elliptical,
+                     .stairClimbing, .crossTraining:
+                    cardioCount += 1
+
+                case .yoga, .mindAndBody, .pilates:
+                    mobilityCount += 1
+
+                default:
+                    print("Uncategorized workout: \(workout.workoutActivityType.rawValue)")
+                }
+            }
+
+            print("Strength: \(strengthCount), Cardio: \(cardioCount), Mobility: \(mobilityCount)")
+
+            // Update the UI on the main thread
+            DispatchQueue.main.async {
+                self?.strengthWorkoutCount = strengthCount
+                self?.cardioWorkoutCount = cardioCount
+                self?.mobilityWorkoutCount = mobilityCount
+            }
+        }
+
+        healthStore.execute(query)
     }
 
     private func updateWorkoutCount() async {
@@ -79,7 +133,9 @@ class HealthStore: ObservableObject {
             let count = samples?.count ?? 0
             print("Fetched workout count: \(count)")  // Log the workout count
             DispatchQueue.main.async {
-                self?.workoutCount = count
+                self?.strengthWorkoutCount = count
+                self?.cardioWorkoutCount = count
+                self?.mobilityWorkoutCount = count
                 print("Workout count updated to: \(count)")
             }
         }

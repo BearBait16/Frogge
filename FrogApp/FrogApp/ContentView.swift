@@ -13,15 +13,37 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Workout Count: \(healthStore.workoutCount)")
+            Text("Strength Workout Count: \(healthStore.strengthWorkoutCount)")
                 .font(.largeTitle)
                 .padding()
         }.task {
             await healthStore.requestAuthorization()
         }
         .padding()
-        Button("record workout") {
-            healthStore.workoutCount += 1
+        Button("record strength workout") {
+            healthStore.strengthWorkoutCount += 1
+        }
+        VStack {
+            Text("Cardio Workout Count: \(healthStore.cardioWorkoutCount)")
+                .font(.largeTitle)
+                .padding()
+        }.task {
+            await healthStore.requestAuthorization()
+        }
+        .padding()
+        Button("record cardio workout") {
+            healthStore.cardioWorkoutCount += 1
+        }
+        VStack {
+            Text("Mobility Workout Count: \(healthStore.mobilityWorkoutCount)")
+                .font(.largeTitle)
+                .padding()
+        }.task {
+            await healthStore.requestAuthorization()
+        }
+        .padding()
+        Button("record mobility workout") {
+            healthStore.mobilityWorkoutCount += 1
         }
     }
 }
