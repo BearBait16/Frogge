@@ -13,11 +13,11 @@ connection_string = f'mongodb+srv://{username}:{password}@{cluster_address}/{db_
 client = MongoClient(connection_string)
 db = client[db_name]
 
-def upload_gif(file_path):
+def upload_gif(file_path, relative_path):
     fs = gridfs.GridFS(db)
     with open(file_path, 'rb') as file:
-        file_id = fs.put(file, filename=os.path.basename(file_path))
-        print(f'Uploaded {file_path} with id {file_id}')
+        file_id = fs.put(file, filename=os.path.basename(file_path), metadata={'relative_path': relative_path})
+        print(f'Uploaded {file_path} with id {file_id} and relative path {relative_path}')
         return file_id
 
 def download_gif(file_id, download_path):
@@ -28,5 +28,7 @@ def download_gif(file_id, download_path):
         print(f'Downloaded file to {download_path}')
 
 # Example usage
-file_id = upload_gif('Tadpol_big-export.gif')  # Ensure the path is correct
+file_path = 'frog_frog.gif'  # Ensure the path is correct
+relative_path = 'Frog_Frog'  # Change this to your desired relative path
+file_id = upload_gif(file_path, relative_path)  # Ensure the path is correct
 download_gif(file_id, 'downloaded_file.gif')  # Ensure the path is correct
