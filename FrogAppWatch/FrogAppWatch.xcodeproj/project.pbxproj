@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		537C219E2CC34A4E007A5011 /* FrogAppWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 537C219D2CC34A4E007A5011 /* FrogAppWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		537C21882CC34A4E007A5011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 537C216F2CC34A4A007A5011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 537C21762CC34A4A007A5011;
+			remoteInfo = FrogAppWatch;
+		};
+		537C21922CC34A4E007A5011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 537C216F2CC34A4A007A5011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 537C21762CC34A4A007A5011;
+			remoteInfo = FrogAppWatch;
+		};
+		537C219F2CC34A4E007A5011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 537C216F2CC34A4A007A5011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 537C219C2CC34A4E007A5011;
+			remoteInfo = "FrogAppWatch Watch App";
+		};
+		537C21B02CC34A4F007A5011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 537C216F2CC34A4A007A5011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 537C219C2CC34A4E007A5011;
+			remoteInfo = "FrogAppWatch Watch App";
+		};
+		537C21BA2CC34A4F007A5011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 537C216F2CC34A4A007A5011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 537C219C2CC34A4E007A5011;
+			remoteInfo = "FrogAppWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		537C21C62CC34A4F007A5011 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				537C219E2CC34A4E007A5011 /* FrogAppWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		537C21772CC34A4A007A5011 /* FrogAppWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrogAppWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		537C21872CC34A4E007A5011 /* FrogAppWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogAppWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		537C21912CC34A4E007A5011 /* FrogAppWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogAppWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		537C219D2CC34A4E007A5011 /* FrogAppWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FrogAppWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		537C21AF2CC34A4F007A5011 /* FrogAppWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FrogAppWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		537C21B92CC34A4F007A5011 /* FrogAppWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FrogAppWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		537C21792CC34A4A007A5011 /* FrogAppWatch */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FrogAppWatch;
+			sourceTree = "<group>";
+		};
+		537C218A2CC34A4E007A5011 /* FrogAppWatchTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FrogAppWatchTests;
+			sourceTree = "<group>";
+		};
+		537C21942CC34A4E007A5011 /* FrogAppWatchUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FrogAppWatchUITests;
+			sourceTree = "<group>";
+		};
+		537C21A12CC34A4E007A5011 /* FrogAppWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "FrogAppWatch Watch App";
+			sourceTree = "<group>";
+		};
+		537C21B22CC34A4F007A5011 /* FrogAppWatch Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "FrogAppWatch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		537C21BC2CC34A4F007A5011 /* FrogAppWatch Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "FrogAppWatch Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		537C21742CC34A4A007A5011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C21842CC34A4E007A5011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C218E2CC34A4E007A5011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C219A2CC34A4E007A5011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C21AC2CC34A4F007A5011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C21B62CC34A4F007A5011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		537C216E2CC34A4A007A5011 = {
+			isa = PBXGroup;
+			children = (
+				537C21792CC34A4A007A5011 /* FrogAppWatch */,
+				537C218A2CC34A4E007A5011 /* FrogAppWatchTests */,
+				537C21942CC34A4E007A5011 /* FrogAppWatchUITests */,
+				537C21A12CC34A4E007A5011 /* FrogAppWatch Watch App */,
+				537C21B22CC34A4F007A5011 /* FrogAppWatch Watch AppTests */,
+				537C21BC2CC34A4F007A5011 /* FrogAppWatch Watch AppUITests */,
+				537C21782CC34A4A007A5011 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		537C21782CC34A4A007A5011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				537C21772CC34A4A007A5011 /* FrogAppWatch.app */,
+				537C21872CC34A4E007A5011 /* FrogAppWatchTests.xctest */,
+				537C21912CC34A4E007A5011 /* FrogAppWatchUITests.xctest */,
+				537C219D2CC34A4E007A5011 /* FrogAppWatch Watch App.app */,
+				537C21AF2CC34A4F007A5011 /* FrogAppWatch Watch AppTests.xctest */,
+				537C21B92CC34A4F007A5011 /* FrogAppWatch Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		537C21762CC34A4A007A5011 /* FrogAppWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537C21C72CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatch" */;
+			buildPhases = (
+				537C21732CC34A4A007A5011 /* Sources */,
+				537C21742CC34A4A007A5011 /* Frameworks */,
+				537C21752CC34A4A007A5011 /* Resources */,
+				537C21C62CC34A4F007A5011 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				537C21A02CC34A4E007A5011 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				537C21792CC34A4A007A5011 /* FrogAppWatch */,
+			);
+			name = FrogAppWatch;
+			packageProductDependencies = (
+			);
+			productName = FrogAppWatch;
+			productReference = 537C21772CC34A4A007A5011 /* FrogAppWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		537C21862CC34A4E007A5011 /* FrogAppWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537C21CA2CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatchTests" */;
+			buildPhases = (
+				537C21832CC34A4E007A5011 /* Sources */,
+				537C21842CC34A4E007A5011 /* Frameworks */,
+				537C21852CC34A4E007A5011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				537C21892CC34A4E007A5011 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				537C218A2CC34A4E007A5011 /* FrogAppWatchTests */,
+			);
+			name = FrogAppWatchTests;
+			packageProductDependencies = (
+			);
+			productName = FrogAppWatchTests;
+			productReference = 537C21872CC34A4E007A5011 /* FrogAppWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		537C21902CC34A4E007A5011 /* FrogAppWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537C21CD2CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatchUITests" */;
+			buildPhases = (
+				537C218D2CC34A4E007A5011 /* Sources */,
+				537C218E2CC34A4E007A5011 /* Frameworks */,
+				537C218F2CC34A4E007A5011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				537C21932CC34A4E007A5011 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				537C21942CC34A4E007A5011 /* FrogAppWatchUITests */,
+			);
+			name = FrogAppWatchUITests;
+			packageProductDependencies = (
+			);
+			productName = FrogAppWatchUITests;
+			productReference = 537C21912CC34A4E007A5011 /* FrogAppWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		537C219C2CC34A4E007A5011 /* FrogAppWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537C21C32CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatch Watch App" */;
+			buildPhases = (
+				537C21992CC34A4E007A5011 /* Sources */,
+				537C219A2CC34A4E007A5011 /* Frameworks */,
+				537C219B2CC34A4E007A5011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				537C21A12CC34A4E007A5011 /* FrogAppWatch Watch App */,
+			);
+			name = "FrogAppWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "FrogAppWatch Watch App";
+			productReference = 537C219D2CC34A4E007A5011 /* FrogAppWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		537C21AE2CC34A4F007A5011 /* FrogAppWatch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537C21D02CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatch Watch AppTests" */;
+			buildPhases = (
+				537C21AB2CC34A4F007A5011 /* Sources */,
+				537C21AC2CC34A4F007A5011 /* Frameworks */,
+				537C21AD2CC34A4F007A5011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				537C21B12CC34A4F007A5011 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				537C21B22CC34A4F007A5011 /* FrogAppWatch Watch AppTests */,
+			);
+			name = "FrogAppWatch Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "FrogAppWatch Watch AppTests";
+			productReference = 537C21AF2CC34A4F007A5011 /* FrogAppWatch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		537C21B82CC34A4F007A5011 /* FrogAppWatch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537C21D32CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatch Watch AppUITests" */;
+			buildPhases = (
+				537C21B52CC34A4F007A5011 /* Sources */,
+				537C21B62CC34A4F007A5011 /* Frameworks */,
+				537C21B72CC34A4F007A5011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				537C21BB2CC34A4F007A5011 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				537C21BC2CC34A4F007A5011 /* FrogAppWatch Watch AppUITests */,
+			);
+			name = "FrogAppWatch Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "FrogAppWatch Watch AppUITests";
+			productReference = 537C21B92CC34A4F007A5011 /* FrogAppWatch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		537C216F2CC34A4A007A5011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					537C21762CC34A4A007A5011 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					537C21862CC34A4E007A5011 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 537C21762CC34A4A007A5011;
+					};
+					537C21902CC34A4E007A5011 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 537C21762CC34A4A007A5011;
+					};
+					537C219C2CC34A4E007A5011 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					537C21AE2CC34A4F007A5011 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 537C219C2CC34A4E007A5011;
+					};
+					537C21B82CC34A4F007A5011 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 537C219C2CC34A4E007A5011;
+					};
+				};
+			};
+			buildConfigurationList = 537C21722CC34A4A007A5011 /* Build configuration list for PBXProject "FrogAppWatch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 537C216E2CC34A4A007A5011;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 537C21782CC34A4A007A5011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				537C21762CC34A4A007A5011 /* FrogAppWatch */,
+				537C21862CC34A4E007A5011 /* FrogAppWatchTests */,
+				537C21902CC34A4E007A5011 /* FrogAppWatchUITests */,
+				537C219C2CC34A4E007A5011 /* FrogAppWatch Watch App */,
+				537C21AE2CC34A4F007A5011 /* FrogAppWatch Watch AppTests */,
+				537C21B82CC34A4F007A5011 /* FrogAppWatch Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		537C21752CC34A4A007A5011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C21852CC34A4E007A5011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C218F2CC34A4E007A5011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C219B2CC34A4E007A5011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C21AD2CC34A4F007A5011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C21B72CC34A4F007A5011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		537C21732CC34A4A007A5011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C21832CC34A4E007A5011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C218D2CC34A4E007A5011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C21992CC34A4E007A5011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C21AB2CC34A4F007A5011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537C21B52CC34A4F007A5011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		537C21892CC34A4E007A5011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 537C21762CC34A4A007A5011 /* FrogAppWatch */;
+			targetProxy = 537C21882CC34A4E007A5011 /* PBXContainerItemProxy */;
+		};
+		537C21932CC34A4E007A5011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 537C21762CC34A4A007A5011 /* FrogAppWatch */;
+			targetProxy = 537C21922CC34A4E007A5011 /* PBXContainerItemProxy */;
+		};
+		537C21A02CC34A4E007A5011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 537C219C2CC34A4E007A5011 /* FrogAppWatch Watch App */;
+			targetProxy = 537C219F2CC34A4E007A5011 /* PBXContainerItemProxy */;
+		};
+		537C21B12CC34A4F007A5011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 537C219C2CC34A4E007A5011 /* FrogAppWatch Watch App */;
+			targetProxy = 537C21B02CC34A4F007A5011 /* PBXContainerItemProxy */;
+		};
+		537C21BB2CC34A4F007A5011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 537C219C2CC34A4E007A5011 /* FrogAppWatch Watch App */;
+			targetProxy = 537C21BA2CC34A4F007A5011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		537C21C12CC34A4F007A5011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		537C21C22CC34A4F007A5011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		537C21C42CC34A4F007A5011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FrogAppWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FrogAppWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.williampcbarr.FrogAppWatch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williampcbarr.FrogAppWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		537C21C52CC34A4F007A5011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FrogAppWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FrogAppWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.williampcbarr.FrogAppWatch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williampcbarr.FrogAppWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		537C21C82CC34A4F007A5011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FrogAppWatch/Preview Content\"";
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FrogAppWatch;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williampcbarr.FrogAppWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		537C21C92CC34A4F007A5011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FrogAppWatch/Preview Content\"";
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FrogAppWatch;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williampcbarr.FrogAppWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		537C21CB2CC34A4F007A5011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williampcbarr.FrogAppWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrogAppWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FrogAppWatch";
+			};
+			name = Debug;
+		};
+		537C21CC2CC34A4F007A5011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williampcbarr.FrogAppWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrogAppWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FrogAppWatch";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		537C21CE2CC34A4F007A5011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williampcbarr.FrogAppWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrogAppWatch;
+			};
+			name = Debug;
+		};
+		537C21CF2CC34A4F007A5011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williampcbarr.FrogAppWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrogAppWatch;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		537C21D12CC34A4F007A5011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williampcbarr.FrogAppWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrogAppWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FrogAppWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		537C21D22CC34A4F007A5011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williampcbarr.FrogAppWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrogAppWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FrogAppWatch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		537C21D42CC34A4F007A5011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williampcbarr.FrogAppWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "FrogAppWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		537C21D52CC34A4F007A5011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7TGV8R73HC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williampcbarr.FrogAppWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "FrogAppWatch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		537C21722CC34A4A007A5011 /* Build configuration list for PBXProject "FrogAppWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537C21C12CC34A4F007A5011 /* Debug */,
+				537C21C22CC34A4F007A5011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537C21C32CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537C21C42CC34A4F007A5011 /* Debug */,
+				537C21C52CC34A4F007A5011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537C21C72CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537C21C82CC34A4F007A5011 /* Debug */,
+				537C21C92CC34A4F007A5011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537C21CA2CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537C21CB2CC34A4F007A5011 /* Debug */,
+				537C21CC2CC34A4F007A5011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537C21CD2CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537C21CE2CC34A4F007A5011 /* Debug */,
+				537C21CF2CC34A4F007A5011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537C21D02CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537C21D12CC34A4F007A5011 /* Debug */,
+				537C21D22CC34A4F007A5011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537C21D32CC34A4F007A5011 /* Build configuration list for PBXNativeTarget "FrogAppWatch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537C21D42CC34A4F007A5011 /* Debug */,
+				537C21D52CC34A4F007A5011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 537C216F2CC34A4A007A5011 /* Project object */;
+}
