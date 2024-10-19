@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var healthStore = HealthStore()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Workout Count: \(healthStore.workoutCount)")
+                .font(.largeTitle)
+                .padding()
+        }.task {
+            await healthStore.requestAuthorization()
         }
         .padding()
+        Button("record workout") {
+            healthStore.workoutCount += 1
+        }
     }
 }
 
