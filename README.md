@@ -17,3 +17,37 @@ Want instant encouragement? You can soon add a widget to your home screen that d
 
 ## Contributing
 We welcome contributions to make Fitness Frogs even better! If you have suggestions or feedback, please open an issue or submit a pull request.
+
+## Overview
+
+## Instructions for Build and Use
+
+Steps to build and/or run the software:
+
+1. open in xcode
+2. hit the build button
+3. a vm of an iPhone should open with the app open
+
+Instructions for using the software:
+
+1. if the app is on your own phone:
+2. log a workout on your apple watch with apple fitness
+3. the app will automatically update
+
+## Development Environment 
+
+To recreate the development environment, you need the following software and/or libraries with the specified versions:
+
+* download Xcode
+* have an iPhone
+* have an applewatch conncected to said phone
+
+## Useful Websites to Learn More
+
+I found these websites useful in developing this software:
+
+* swift.org
+*
+*
+
+
